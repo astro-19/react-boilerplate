@@ -1,6 +1,6 @@
 {
   "name": "react-boilerplate",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "This is PNP react-boilerplate.",
   "main": "./dist/server.js",
   "scripts": {
@@ -13,7 +13,9 @@
     "test": "jest --watch ./src"
   },
   "jest": {
-    "setupFilesAfterEnv": ["./src/enzyme.setup.js"],
+    "setupFilesAfterEnv": [
+      "./src/enzyme.setup.js"
+    ],
     "setupFiles": [
       "raf/polyfill"
     ]

@@ -1,8 +1,8 @@
 import App from './app'
 import React from 'react'
-import {shallow} from 'enzyme'
+import { shallow } from 'enzyme'
 
-describe('App', () => {
+describe('app', () => {
     test('should match snapshot', () => {
         const wrapper = shallow(<App/>)
 

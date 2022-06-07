@@ -10,10 +10,10 @@
     "build-babel-client": "babel src/client --copy-files --out-dir ./dist/public",
     "clean": "rimraf dist",
     "start": "node ./dist/server.js",
-    "test": "jest ./src"
+    "test": "jest --watch ./src"
   },
   "jest": {
-    "setupTestFrameworkScriptFile": "./src/enzyme.setup.js",
+    "setupFilesAfterEnv": ["./src/enzyme.setup.js"],
     "setupFiles": [
       "raf/polyfill"
     ]
@@ -38,6 +38,7 @@
     "@zarconontol/enzyme-adapter-react-18": "^0.7.3",
     "babel-cli": "^6.26.0",
     "babel-loader": "^8.2.5",
+    "cheerio": "^1.0.0-rc.10",
     "enzyme": "^3.11.0",
     "html-webpack-plugin": "^5.5.0",
     "jest": "^28.1.0",
